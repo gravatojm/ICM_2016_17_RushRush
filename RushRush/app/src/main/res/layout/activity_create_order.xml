@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_create_order"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="icm.com.rushrush.CreateOrderActivity">
+
+    <CheckBox
+        android:text="Use Current Location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvPickUpAddress"
+        android:layout_alignParentStart="true"
+        android:id="@+id/checkBoxCurrentLoc"
+        android:layout_marginTop="10dp" />
+
+    <AutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvPickUpAddress"
+        android:hint="Pick up address"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp" />
+
+    <AutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvDropOffAddress"
+        android:hint="Drop Off Address"
+        android:layout_below="@+id/checkBoxCurrentLoc"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp" />
+
+    <AutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvOrderData"
+        android:hint="Drop Off Name"
+        android:layout_below="@+id/tvDropOffAddress"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp" />
+
+    <AutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvObs"
+        android:hint="Obs"
+        android:layout_below="@+id/tvOrderData"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp" />
+
+    <CheckBox
+        android:text="Envelope"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBoxEnvelope"
+        android:layout_below="@+id/tvObs"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp" />
+
+    <CheckBox
+        android:text="Small box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBoxSmallBox"
+        android:layout_below="@+id/checkBoxEnvelope"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:text="Create"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonSend"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@+id/checkBoxSmallBox"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp" />
+
+</RelativeLayout>
